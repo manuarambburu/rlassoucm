@@ -1,0 +1,31 @@
+exportPattern("^[[:alpha:]]+")
+
+if (!require("tidyverse", character.only = TRUE)) {
+  install.packages("tidyverse")
+  library("tidyverse", character.only = TRUE)
+}
+
+if (!require("haven", character.only = TRUE)) {
+  install.packages("haven")
+  library("haven", character.only = TRUE)
+}
+
+if (!require("survival", character.only = TRUE)) {
+  install.packages("survival")
+  library("survival", character.only = TRUE)
+}
+
+if (!require("glmnet", character.only = TRUE)) {
+  install.packages("glmnet")
+  library("glmnet", character.only = TRUE)
+}
+
+if (!require("ggplot2", character.only = TRUE)) {
+  install.packages("ggplot2")
+  library("ggplot2", character.only = TRUE)
+}
+
+if (!require("progress", character.only = TRUE)) {
+  install.packages("progress")
+  library("progress", character.only = TRUE)
+}
