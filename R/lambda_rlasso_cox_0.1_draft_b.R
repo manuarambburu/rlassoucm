@@ -264,7 +264,3 @@ lambda_rlasso_cox <- function(dats, varss, time, status, lambda = seq(0, 1, 0.01
   return(cindexes)
 
 }
-
-# set.seed(1234)
-#
-# lambdas <- lambda_rlasso_cox(mibase, 7:706, "OS", "Exitus", lstd = F)
