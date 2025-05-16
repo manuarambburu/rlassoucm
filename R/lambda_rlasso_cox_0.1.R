@@ -360,7 +360,7 @@ lambda_rlasso_cox <- function(dats, varss, time, status, lambda = seq(0, 1, 0.01
     geom_boxplot(aes(x = as.factor(lambdas),
                      y = round(cindexes, digits = 2),
                      color = top)) +
-    scale_y_continuous(limits = c(min(lambdas |> filter(cindexes != 0) |> pull(cindexes)), 1)) +
+    scale_y_continuous(limits = c(min(cindexes |> filter(cindexes != 0) |> pull(cindexes)), 1)) +
     guides(size = "none",
            fill = "none",
            color = "none") +
