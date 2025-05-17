@@ -5,7 +5,7 @@
 #'
 #' @format A data frame with 70 rows and 706 variables
 #'
-#' @source Data obtained from some hospital in Spain that has been full anonymaized.
+#' @source {Data obtained from some hospital in Spain that has been full anonymaized.}
 #'
 #' @examples
 #' data(myelasthoma)
