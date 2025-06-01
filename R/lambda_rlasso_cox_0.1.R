@@ -14,10 +14,10 @@ lambda_rlasso_cox <- function(dats, varss, time, status, lambda = seq(0, 1, 0.01
   # varss <vector>: names (char vector) or positions (numeric vector) within dats of the dats' variables that will be the covariates of the model
   # time <char>: name of the variable in dats with survival time of the subjects/ patients
   # status <char>: name of the variable in dats with status of the subjects/ patients - 0 is censored always
-  # B <numeric>: number of bootstrap samples that
+  # B <numeric>: number of bootstrap samples
   # q1 <numeric>: number of selected random variables for rlasso step 1
   # q2 <numeric>: number of selected random variables for rlasso step 2
-  # lambda <numeric>: lambda parameter of lasso regresion
+  # lambda <numeric>: sequence of lambdas that will be tested along the cros validation
   # lstd <boolean>: indicates if variables should be standardized inside the function (should be F if variables have been already standardized)
 
   #---------------------------------------------
